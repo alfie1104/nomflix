@@ -7,7 +7,7 @@ import Message from "Components/Message";
 import Poster from "Components/Poster";
 
 const Container = styled.div`
-    padding: 0px 20px;
+    padding:20px;
 `;
 
 const Form = styled.form`
@@ -65,7 +65,7 @@ const SearchPresenter = ({
                 )}
             </>}
             {error && <Message color="#e74c3c" text={error} />}
-            {tvResults && movieResults && tvResults.length == 0 && movieResults.length == 0 && (
+            {tvResults && movieResults && tvResults.length === 0 && movieResults.length === 0 && (
                 <Message text="Noting found" color="#95a5a6" />)
             }
         </Container>)
