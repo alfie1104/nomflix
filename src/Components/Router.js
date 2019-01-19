@@ -7,6 +7,7 @@ import Header from "Components/Header";
 import Detail from "../Routes/Detail";
 
 //한번에 하나의 라우터만 렌더링 하기 위해서 Switch 사용
+//원래 BrowserRouter를 router로 사용했으나, netlify에서 refresh시 페이지 경로를 잃어버리는 현상때문에 HashRouter로 변경하였음
 export default () => (
     <Router>
         <>
